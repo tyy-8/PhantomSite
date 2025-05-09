@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/6.5.1/framer-motion.umd.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>Phantom</title>
+  <link rel="icon" href="phantomLogoText.png" type="image/png">
+  <style>
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .gradient-border {
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+      padding: 2px;
+      border-radius: 12px;
+    }
+
+    .gradient-border .content {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .nav-link {
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ff4b2b;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white min-h-screen p-8">
+    <div class="max-w-5xl mx-auto">
+        <!-- Top Bar -->
+        <nav class="bg-gray-900 p-4 rounded-xl mb-8 shadow-lg fade-in">
+            <div class="flex justify-between items-center">
+              <a href="#" class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-white to-red-500">Phantom</a>
+              <div class="space-x-4">
+                <a href="index.html" class="text-white hover:text-red-400" >Home</a>
+                <a href="reviews.html" class="text-white hover:text-red-400">Showcase</a>
+              </div>
+            </div>
+          </nav>
+    
+          <section class="mb-16 fade-in" id="video">
+            <h2 class="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-red-500 text-center">Watch Phantom in Action</h2>
+            <div class="flex justify-center">
+              <div class="gradient-border w-full max-w-xl relative">
+                <div class="content relative">
+                  <a href="https://www.youtube.com/watch?v=ZlqiYFrsxtk" target="_blank">
+                    <img class="w-full rounded-xl cursor-pointer hover:opacity-80 transition-all duration-300" src="https://img.youtube.com/vi/ZlqiYFrsxtk/hqdefault.jpg" alt="Phantom Mod Menu Video Thumbnail" />
+                  </a>
+                  
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <a href="https://www.youtube.com/watch?v=ZlqiYFrsxtk" target="_blank" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-6 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-110">
+                      Watch Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          
+          
+          
+
+    </div>
+</body>
